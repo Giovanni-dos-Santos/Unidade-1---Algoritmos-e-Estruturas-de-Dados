@@ -3,16 +3,16 @@
 #include <math.h>
 int main(){
 	setlocale (LC_ALL, "Portuguese");
-	float a, b, conta;
-	printf("Digite o valor do salário: ");
+	float a, b;
+	printf("Digite o valor do salÃ¡rio: ");
 	scanf("%f", &a);
-	printf("Digite o valor da prestação: ");
+	printf("Digite o valor da prestaÃ§Ã£o: ");
 	scanf("%f", &b);
-	conta=a*0,20;
-	if(b>conta){
-		printf("Empréstimo não concedido");
+	if(a*0.20<b){
+		printf("EmprÃ©stimo nÃ£o concedido");
 	}
 	else	
-		printf("Empréstimo concedido");
+		printf("EmprÃ©stimo concedido");
 	return 0;
 	}
+
