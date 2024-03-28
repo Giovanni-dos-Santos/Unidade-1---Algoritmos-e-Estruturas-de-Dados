@@ -5,14 +5,14 @@ int main(){
 	setlocale (LC_ALL, "Portuguese");
 	float a, b, media;
 	printf("Escreva a primeira nota: ");
-	scanf("%d", &a);
+	scanf("%f", &a);
 	printf("Escreva a primeira nota: ");
-	scanf("%d", &b);
-	if(a>0; a<10; b>0; b<10){
-		printf("A media das notas é %.2f", media);
-		media=(a*b)/2;
+	scanf("%f", &b);
+	media=(a+b)/2;
+	if(a>0, a<10, b>0, b<10){
+		printf("A media das notas Ã© %.2f", media);
 	}
 	else	
-		printf("Valor inválido");
+		printf("Valor invÃ¡lido");
 	return 0;
 	}
