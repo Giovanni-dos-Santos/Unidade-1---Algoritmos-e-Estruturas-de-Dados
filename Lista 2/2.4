@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale (LC_ALL, "Portuguese");
+    int contador = 0;
+    double numero, soma = 0.0;
+    while (contador < 5) {
+        printf("Digite o número %d: ", contador + 1);
+        scanf("%lf", &numero);
+        soma += numero;
+        contador++;
+    }
+    double media = soma / 5.0;
+    printf("A media dos numeros fornecidos é: %.2f\n", media);
+    
+    return 0;
+}

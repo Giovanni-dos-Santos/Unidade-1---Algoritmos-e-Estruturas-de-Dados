@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale>
+int main (){
+	int n, conta;
+	setlocale(LC_ALL, "Portuguese");
+	printf("Observe essa expressão: n(5*(1*1)+2*1+8)");
+	printf("\nDigite o valor de n:");
+	scanf("%d", &n);
+	conta=n*(5*(1*1)+2*1+8);
+	printf("\nO resultado de n(5*(1*1)+2*1+8) é %d", conta);
+	return 0;
+}

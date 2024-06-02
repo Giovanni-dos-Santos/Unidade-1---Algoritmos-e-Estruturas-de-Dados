@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <locale>
+int main (){
+	setlocale(LC_ALL, "Portuguese");
+	int a;
+	printf("Adivinhe um número:");
+	scanf("%d", &a);
+	while(a != 42){
+		printf("Número errado\n");
+		printf("Tente novamente:");
+		scanf("%d", &a);
+	}
+printf("Parabéns! Você acertou o número!\n");
+return 0;
+}

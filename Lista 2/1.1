@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale (LC_ALL, "Portuguese");
+	int a, b, c;
+	printf("Digite o 1° lado do triângulo: ");
+	scanf("%d", &a);
+	printf("Digite o 2° lado do triângulo: ");
+	scanf("%d", &b);
+	printf("Digite o 3° lado do triângulo: ");
+	scanf("%d", &c);
+	if(a==b && b==c && c==a){
+		printf("Isso é um triângulo equilátero");
+	}
+	else if(a==b || a==c){
+		printf("Isso é um triângulo isósceles");
+	}
+	else
+		printf("Isso é um triângulo escaleno");
+	return 0;
+}

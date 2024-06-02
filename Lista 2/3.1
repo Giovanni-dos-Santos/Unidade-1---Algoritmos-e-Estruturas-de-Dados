@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <locale>
+int main(){
+	setlocale (LC_ALL, "Portuguese");
+    int i=2, numero;
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+    for (i==2; i <= numero; i += 2) {
+        printf("%d ", i);
+    }
+	return 0;
+}

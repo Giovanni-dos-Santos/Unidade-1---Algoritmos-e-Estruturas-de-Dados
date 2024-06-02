@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <locale>
+int main (){
+	setlocale(LC_ALL, "Portuguese");
+	    int i, b, soma = 0; 
+    printf("Escolha um número: ");
+    scanf("%d", &b);
+    for(i=2; i<=b; i++){ 
+        int primo = 1; 
+        for (int j = 2; j * j <= i; j++) { 
+            if (i % j == 0) { 
+                primo = 0;
+                break;
+            }
+        }
+        if(primo == 1){ 
+            soma += i;
+            printf("%d ", i);
+        }
+    }
+    printf("\nA soma dos números primos até %d é: %d\n", b, soma);
+    return 0;
+}
